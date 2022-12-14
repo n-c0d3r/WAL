@@ -42,7 +42,7 @@ target_link_libraries(WAL
 
 target_include_directories(WAL
     PUBLIC 
-        ${CMAKE_BINARY_DIR}/WAL/ConfigurationFiles
+        ${CMAKE_CURRENT_BINARY_DIR}/WAL/ConfigurationFiles
         ${CMAKE_CURRENT_LIST_DIR}/Source
         # ${CMAKE_CURRENT_LIST_DIR}/../NJobSystem/NJS/Source
 )
