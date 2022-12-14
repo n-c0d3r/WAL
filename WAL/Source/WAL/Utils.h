@@ -11,6 +11,7 @@
 #include <exception>
 #include <random>
 #include <sstream>
+#include <functional>
 
 #ifdef _WIN32
 #include <Windows.h>

@@ -17,17 +17,12 @@ int main() {
 
 	});
 
-	WAL::I_Window* standardWindow2 = WAL::I_StandardWindow::Create({
+	standardWindow->GetEvent("DESTROY")->AddListener([](WAL::C_Event* e) {
 
-		L"Second Window",
-
-		900,
-		500,
-
-		WAL::E_WindowVisibility::Visible
+		WAL::HN_Log::Info("Destroy");
 
 	});
-
+	
 	while (true) {
 
 		api->CheckMessage();

@@ -49,6 +49,8 @@ namespace WAL {
 			case WM_DESTROY:
 			{
 
+				GetEvent("DESTROY")->Invoke();
+
 				HN::handle2WindowMap.erase(m_WindowHandle);
 
 				Release();

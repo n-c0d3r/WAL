@@ -16,5 +16,9 @@ set(WAL_BINARY_DIR ${CMAKE_CURRENT_BINARY_DIR}/WAL/$<CONFIG>)
 
 
 
+add_definitions(-DUNICODE)
+
+
+
 add_subdirectory(WAL)
 add_subdirectory(Samples)

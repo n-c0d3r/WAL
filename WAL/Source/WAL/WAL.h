@@ -10,6 +10,7 @@
 #include <WAL/Windows/Windows.h>
 #include <WAL/Window.h>
 #include <WAL/StandardWindow.h>
+#include <WAL/Event.h>
 
 
 
