@@ -11,7 +11,7 @@ set(WAL_SOURCE_DIR ${CMAKE_SOURCE_DIR}/WAL/Source)
 
 
 
-configure_file(ConfigurationFiles/WAL/.BuildInfo ConfigurationFiles/WAL/.BuildInfo)
+configure_file(ConfigurationFiles/WAL/.BuildInfo ${CMAKE_CURRENT_BINARY_DIR}/ConfigurationFiles/WAL/.BuildInfo)
 
 
 
