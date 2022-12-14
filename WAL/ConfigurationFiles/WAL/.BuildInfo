@@ -1,0 +1,5 @@
+#ifdef WAL_EXPORTS
+#define WAL_EXTERN
+#else
+#define WAL_EXTERN extern
+#endif
