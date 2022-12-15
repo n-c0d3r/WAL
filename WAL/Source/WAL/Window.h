@@ -42,6 +42,13 @@ namespace WAL {
 		S_WindowDesc m_Desc;
 		std::unordered_map<std::string, C_Event> name2EventMap;
 
+	protected:
+		U32x2 m_MousePosition;
+		U32x2 m_Size;
+		bool m_Minimized = false;  // is the application minimized?
+		bool m_Maximized = false;  // is the application maximized?
+		bool m_Resizing = false;   // are the resize bars being dragged?
+
 
 
 	protected:
@@ -58,6 +65,11 @@ namespace WAL {
 
 		bool IsHasEvent(const std::string& name) { return name2EventMap.find(name) != name2EventMap.end(); }
 		C_Event* GetEvent(const std::string& name) { return &name2EventMap[name]; }
+		U32x2 GetMousePosition() { return m_MousePosition; }
+		U32x2 GetSize() { return m_Size; }
+		bool IsMinimized() { return m_Minimized; }
+		bool IsMaximized() { return m_Maximized; }
+		bool IsResizing() { return m_Resizing; }
 
 	};
 

@@ -15,11 +15,33 @@ int main() {
 
 		WAL::E_WindowVisibility::Visible
 
-	});
+	}); 
 
 	standardWindow->GetEvent("DESTROY")->AddListener([](WAL::C_Event* e) {
 
-		WAL::HN_Log::Info("Destroy");
+
+
+	});
+
+	standardWindow->GetEvent("RESIZE")->AddListener([standardWindow](WAL::C_Event* e) {
+
+		std::stringstream output;
+
+		output << standardWindow->GetSize().x;
+		output << " ";
+		output << standardWindow->GetSize().y;
+
+	});
+
+	standardWindow->GetEvent("MOUSE_MOVE")->AddListener([standardWindow](WAL::C_Event* e) {
+
+		std::stringstream output;
+
+		output << standardWindow->GetMousePosition().x;
+		output << " ";
+		output << standardWindow->GetMousePosition().y;
+
+		WAL::HN_Log::Info(output.str());
 
 	});
 	
