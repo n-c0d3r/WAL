@@ -24,8 +24,6 @@ namespace WAL {
 
 			I_API::Release();
 
-			I_AbstractObject::Release();
-
 			HN_Log::Info("<WAL> Windows API Released");
 
 		}
