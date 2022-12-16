@@ -20,7 +20,10 @@ add_definitions(-DUNICODE)
 
 
 
-add_subdirectory(${CMAKE_SOURCE_DIR}/UL)
+
+if(${CMAKE_SOURCE_DIR} EQUAL ${CMAKE_CURRENT_SOURCE_DIR})
+    add_subdirectory(${CMAKE_SOURCE_DIR}/UL)
+endif()
 
 
 
