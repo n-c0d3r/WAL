@@ -6,8 +6,8 @@ include(${WAL_CMAKE_DIR}/APIOptions.cmake)
 
 
 
-set(WAL_SOURCE_DIR ${CMAKE_SOURCE_DIR}/WAL/Source PARENT_SCOPE)
-set(WAL_SOURCE_DIR ${CMAKE_SOURCE_DIR}/WAL/Source)
+set(WAL_SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/Source PARENT_SCOPE)
+set(WAL_SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/Source)
 
 
 
@@ -44,8 +44,8 @@ target_link_libraries(WAL
 target_include_directories(WAL
     PUBLIC 
         ${CMAKE_CURRENT_BINARY_DIR}/ConfigurationFiles
-        ${CMAKE_CURRENT_LIST_DIR}/Source
-        ${CMAKE_CURRENT_LIST_DIR}/../UL/UL/Source
+        ${CMAKE_CURRENT_SOURCE_DIR}/Source
+        ${CMAKE_CURRENT_SOURCE_DIR}/../UL/UL/Source
 )
 
 target_compile_definitions(WAL
