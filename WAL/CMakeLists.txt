@@ -45,7 +45,7 @@ target_include_directories(WAL
     PUBLIC 
         ${CMAKE_CURRENT_BINARY_DIR}/ConfigurationFiles
         ${CMAKE_CURRENT_SOURCE_DIR}/Source
-        ${CMAKE_CURRENT_SOURCE_DIR}/../UL/UL/Source
+        ${CMAKE_SOURCE_DIR}/UL/UL/Source
 )
 
 target_compile_definitions(WAL
