@@ -13,7 +13,9 @@ namespace WAL {
     namespace Windows {
 
         class C_API :
-            public I_API
+            public I_API,
+
+            public UL::I_AbstractObject
         {
 
         private:

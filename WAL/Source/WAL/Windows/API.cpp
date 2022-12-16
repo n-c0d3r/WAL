@@ -23,6 +23,7 @@ namespace WAL {
 			UL::HN_Log::Info("<WAL> Start Releasing Windows API");
 
 			I_API::Release();
+			UL::I_AbstractObject::Release();
 
 			UL::HN_Log::Info("<WAL> Windows API Released");
 

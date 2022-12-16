@@ -7,7 +7,9 @@
 namespace WAL {
 
 	class I_StandardWindow :
-		public I_Window
+		public I_Window,
+
+		public UL::I_AbstractObject
 	{
 
 	private:

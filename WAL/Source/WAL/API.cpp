@@ -33,7 +33,7 @@ namespace WAL {
 	}
 	void I_API::Release() {
 
-		I_AbstractObject::Release();
+
 
 	}
 
