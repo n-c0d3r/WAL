@@ -20,7 +20,7 @@ add_definitions(-DUNICODE)
 
 
 
-add_subdirectory(UL)
+add_subdirectory(${CMAKE_SOURCE_DIR}/UL)
 
 
 
