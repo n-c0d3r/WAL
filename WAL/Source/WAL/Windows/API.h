@@ -1,6 +1,7 @@
 #pragma once
 
 #include <WAL/.BuildInfo>
+
 #include <WAL/Utils.h>
 
 #include <WAL/API.h>

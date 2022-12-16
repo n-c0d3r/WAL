@@ -3,9 +3,6 @@
 #include <WAL/.BuildInfo>
 #include <WAL/Utils.h>
 
-#include <WAL/AbstractObject.h>
-#include <WAL/Singleton.h>
-
 
 
 namespace WAL {
@@ -13,7 +10,7 @@ namespace WAL {
 
 
 	class C_Event :
-		public I_AbstractObject
+		public UL::I_AbstractObject
 	{
 
 	private:

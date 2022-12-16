@@ -3,9 +3,6 @@
 #include <WAL/.BuildInfo>
 #include <WAL/Utils.h>
 
-#include <WAL/AbstractObject.h>
-#include <WAL/Singleton.h>
-
 #include <WAL/Window.h>
 
 

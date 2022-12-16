@@ -3,9 +3,6 @@
 #include <WAL/.BuildInfo>
 #include <WAL/Utils.h>
 
-#include <WAL/AbstractObject.h>
-#include <WAL/Singleton.h>
-
 #include <WAL/Event.h>
 
 
@@ -26,8 +23,8 @@ namespace WAL {
 	struct S_WindowDesc {
 
 		std::wstring title;
-		U32 width;
-		U32 height;
+		UL::U32 width;
+		UL::U32 height;
 		E_WindowVisibility visibility;
 
 	};
@@ -35,7 +32,7 @@ namespace WAL {
 
 
 	class I_Window :
-		public I_AbstractObject
+		public UL::I_AbstractObject
 	{
 
 	private:
@@ -43,8 +40,8 @@ namespace WAL {
 		std::unordered_map<std::string, C_Event> name2EventMap;
 
 	protected:
-		U32x2 m_MousePosition;
-		U32x2 m_Size;
+		UL::U32x2 m_MousePosition;
+		UL::U32x2 m_Size;
 		bool m_Minimized = false;  // is the application minimized?
 		bool m_Maximized = false;  // is the application maximized?
 		bool m_Resizing = false;   // are the resize bars being dragged?
@@ -65,8 +62,8 @@ namespace WAL {
 
 		bool IsHasEvent(const std::string& name) { return name2EventMap.find(name) != name2EventMap.end(); }
 		C_Event* GetEvent(const std::string& name) { return &name2EventMap[name]; }
-		U32x2 GetMousePosition() { return m_MousePosition; }
-		U32x2 GetSize() { return m_Size; }
+		UL::U32x2 GetMousePosition() { return m_MousePosition; }
+		UL::U32x2 GetSize() { return m_Size; }
 		bool IsMinimized() { return m_Minimized; }
 		bool IsMaximized() { return m_Maximized; }
 		bool IsResizing() { return m_Resizing; }

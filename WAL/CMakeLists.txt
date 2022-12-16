@@ -37,14 +37,15 @@ add_library(WAL STATIC
 
 
 target_link_libraries(WAL
-
+    PUBLIC 
+        UL
 )
 
 target_include_directories(WAL
     PUBLIC 
         ${CMAKE_CURRENT_BINARY_DIR}/ConfigurationFiles
         ${CMAKE_CURRENT_LIST_DIR}/Source
-        # ${CMAKE_CURRENT_LIST_DIR}/../NJobSystem/NJS/Source
+        ${CMAKE_CURRENT_LIST_DIR}/../UL/UL/Source
 )
 
 target_compile_definitions(WAL

@@ -1,25 +1,8 @@
 #pragma once
 
-#include <WAL/.BuildInfo>
+#include <UL/UL.h>
 
-#include <iostream>
-#include <vector>
-#include <map>
-#include <unordered_map>
-#include <set>
-#include <unordered_set>
-#include <exception>
-#include <random>
-#include <sstream>
-#include <functional>
 
-#ifdef _WIN32
-#include <Windows.h>
-#endif
-
-#include "Types.h"
-#include "Log.h"
-#include "Exception.h"
 
 namespace WAL {
 

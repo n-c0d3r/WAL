@@ -13,21 +13,21 @@ namespace WAL {
 #ifdef WIN32
 		try {
 
-			HN_Log::Info("<WAL> Choose Windows API");
+			UL::HN_Log::Info("<WAL> Choose Windows API");
 
 			return new Windows::C_API();
 		}
-		catch (I_Exception& e) {
+		catch (UL::I_Exception& e) {
 
-			HN_Log::Exception(e);
+			UL::HN_Log::Exception(e);
 
-			HN_Log::Error("<WAL> Initializing Windows API failed");
+			UL::HN_Log::Error("<WAL> Initializing Windows API failed");
 
 			return 0;
 		}
 #endif
 
-		HN_Log::Error("<WAL> No OS API is supported");
+		UL::HN_Log::Error("<WAL> No OS API is supported");
 
 		return 0;
 	}

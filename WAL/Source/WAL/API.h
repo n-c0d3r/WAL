@@ -3,9 +3,6 @@
 #include <WAL/.BuildInfo>
 #include <WAL/Utils.h>
 
-#include <WAL/AbstractObject.h>
-#include <WAL/Singleton.h>
-
 
 
 namespace WAL {
@@ -13,8 +10,8 @@ namespace WAL {
 
 
 	class I_API :
-		public I_AbstractObject,
-		public TC_Singleton<I_API>
+		public UL::I_AbstractObject,
+		public UL::TC_Singleton<I_API>
 	{
 
 	protected:

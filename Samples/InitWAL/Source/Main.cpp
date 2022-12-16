@@ -41,7 +41,7 @@ int main() {
 		output << " ";
 		output << standardWindow->GetMousePosition().y;
 
-		WAL::HN_Log::Info(output.str());
+		UL::HN_Log::Info(output.str());
 
 	});
 	

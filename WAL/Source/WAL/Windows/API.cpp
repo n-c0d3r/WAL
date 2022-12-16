@@ -10,21 +10,21 @@ namespace WAL {
 			I_API("Windows")
 		{
 
-			HN_Log::Info("<WAL> Start initializing Windows API");
+			UL::HN_Log::Info("<WAL> Start initializing Windows API");
 
 			InternalInit();
 
-			HN_Log::Info("<WAL> Windows API initialized");
+			UL::HN_Log::Info("<WAL> Windows API initialized");
 
 		}
 
 		void C_API::Release() {
 
-			HN_Log::Info("<WAL> Start Releasing Windows API");
+			UL::HN_Log::Info("<WAL> Start Releasing Windows API");
 
 			I_API::Release();
 
-			HN_Log::Info("<WAL> Windows API Released");
+			UL::HN_Log::Info("<WAL> Windows API Released");
 
 		}
 
