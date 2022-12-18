@@ -30,7 +30,6 @@ namespace WAL {
 			}
 
 			I_StandardWindow::Release();
-			UL::I_AbstractObject::Release();
 
 		}
 

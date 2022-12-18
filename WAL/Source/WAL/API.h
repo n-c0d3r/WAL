@@ -36,7 +36,7 @@ namespace WAL {
 
 	public:
 		static I_API* Create();
-		virtual void Release() override;
+		virtual void Release();
 
 		virtual bool CheckMessage() { return false; }
 

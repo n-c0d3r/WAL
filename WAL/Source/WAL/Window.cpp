@@ -40,7 +40,7 @@ namespace WAL {
 
 	void I_Window::Release() {
 
-
+		UL::I_AbstractObject::Release();
 
 	}
 
